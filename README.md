@@ -2,8 +2,8 @@
 
 # ReSplicer
 
-Java package for tracking gene structure evolution with splice site sliding and for reannotation. The program evaluates splice site homology using genomic sequences and aligned orthologous protein-coding genes.The software is free under the terms of the MIT 
-License (see `LICENSE.md`).
+The package implements our analysis methods for exon-intron structure evolution. The program evaluates splice site homology using multiple, annotated genomic sequences and aligned orthologous protein-coding genes. Ancestral gene structure reconstruction considers intron gain and loss, as well as intron boundary sliding. The program may be used also to recalculate exon boundaries based on alignment evidence.    
+The software is free under the terms of the MIT License (see `LICENSE.md`).
 
 In order to use it, you need: 
 
@@ -16,7 +16,7 @@ Download ReSplicer.jar. The test directory contains a complete example for 9 oom
 
 0. Collect data
 ===============
-For every organism: get the genomes (Fasta with chromosome sequences), the gene annotations (GFF, GenePred, GTF formats work),and the proteins. Select your ortholog groups (e.g., use OrthoMCL): they must contain exactly one gene from each genome, and align the protein sequences (e.g., use Muscle). Compute a phylogeny for the genomes (branch lengths are immaterial): use a simple codename for every taxon. 
+For every organism: get the genomes (Fasta with chromosome sequences), the gene annotations (GFF, GenePred, GTF formats work),and the proteins. Select your ortholog groups (e.g., use [OrthoMCL](http://www.orthomcl.org/)): they must contain exactly one gene from each genome, and align the protein sequences (e.g., use [Muscle](http://www.drive5.com/muscle/)). Compute a phylogeny for the genomes (branch lengths are immaterial): use a simple codename for every taxon. 
 
 Below, `JAVA` means your java engine with appropriate options (like `java -Xmx2048M` for 2G memory). All programs can be run without arguments for more information about their arguments (e.g., `JAVA -cp ReSplicer.jar splice.extractAnnotations`). 
 
@@ -48,7 +48,7 @@ Example: `java -Xmx2048M-cp ReSplicer.jar splice.collectStatistics -o model.data
 ========================
 `JAVA -cp ReSplicer.jar splice.checkSites [options] org1=g1.fa,org2=g2.fa,... annotations.txt tree model.data ali1.fa ali2.fa ... `
 
-* tree is a Newick-format tree
+* tree is a [Newick-format](http://evolution.genetics.washington.edu/phylip/newicktree.html) tree
 * options include `-save` to write reannotated genes into a separate directory
 
 Example: `java -Xmx2048M -cp ReSplicer.jar splice.checkSites -loss 5 -gain 12 -annot 1 -shift 5 -save savedir  phra=genome-phra.fa.gz,phso=genome-phso.fa.gz,pyul=genome-pyul.fa.gz,albu=genome-albu.fa,hyal=genome-hyal.fa,phca=genome-phca.fa,phin=genome-phin.fa.gz,phpa=genome-phpa.fa.gz,phci=genome-phci.fa.gz annotations.txt model.data oomycetes.tre orthologs/ali*.faa`
