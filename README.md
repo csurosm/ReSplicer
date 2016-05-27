@@ -10,6 +10,9 @@ In order to use it, you need:
 * a phylogeny
 * genome sequences
 
+Download ReSplicer.jar. The test directory contains a complete example for 9 oomycete genomes. 
+
+
 0. Collect data
 ===============
 For every organism: get the genomes (Fasta with chromosome sequences), the gene annotations (GFF, GenePred, GTF formats work),and the proteins. Select your ortholog groups (e.g., use OrthoMCL): they must contain exactly one gene from each genome, and align the protein sequences (e.g., use Muscle). Compute a phylogeny for the genomes (branch lengths are immaterial): use a simple codename for every taxon. 
