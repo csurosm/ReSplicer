@@ -3,7 +3,7 @@ in lieu of a long fancy manual.
 
 The test data cover nine oomycete genomes. The analysis results are described in our paper: 
 
-	Bocco and Cs&#369;rös "Splice sites seldom slide: intron evolution in oomycetes", Genome Biology and Evolution, 2016.
+>Bocco and Cs&#369;r√∂s "Splice sites seldom slide: intron evolution in oomycetes", Genome Biology and Evolution, 2016.
 
 # 0. Collect the data
 
@@ -11,7 +11,7 @@ The test data cover nine oomycete genomes. The analysis results are described in
 
 The genome sequences and the annotations can be downloaded from the URLs below. JGI 
 requires that you register with them, but others can be downloaded directly from the command line
-(e.g., wget -O albu.fna.gz ftp://ftp.ensemblgenomes.org/pub/protists/release-31/fasta/albugo_laibachii//dna/Albugo_laibachii.ENA1.31.dna_sm.genome.fa.gz).
+(e.g., `wget -O albu.fna.gz ftp://ftp.ensemblgenomes.org/pub/protists/release-31/fasta/albugo_laibachii//dna/Albugo_laibachii.ENA1.31.dna_sm.genome.fa.gz`).
 Rename the files as shown (four-letter organism code + extension). You can leave the files compressed 
 (here, JGI and Broad files are uncompressed, those from Ensembl Protists stay gzipped). 
 
@@ -19,33 +19,41 @@ Note: P. parasitica genome has a newer assembly. We used the originally publishe
 (phytophthora_parasitica_inra-310_2_supercontigs.fasta, phytophthora_parasitica_inra-310_2_transcripts.gtf),
 but Broad redesigned their data download pages since. 
 
-albu
-	albu.fna.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/fasta/albugo_laibachii/dna/Albugo_laibachii.ENA1.31.dna_sm.genome.fa.gz
-	albu.gff.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/gff3/albugo_laibachii/Albugo_laibachii.ENA1.31.gff3.gz
-hyal
-	hyal.fna.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/fasta/hyaloperonospora_arabidopsidis/dna/Hyaloperonospora_arabidopsidis.HyaAraEmoy2_2.0.31.dna_sm.genome.fa.gz
-	hyal.gff.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/gff3/hyaloperonospora_arabidopsidis/Hyaloperonospora_arabidopsidis.HyaAraEmoy2_2.0.31.gff3.gz
-phca
-	phca.fna	 http://genome.jgi.doe.gov/Phyca11/download/Phyca11_masked_genomic_scaffolds.fasta.gz
-	phca.gff	 http://genome.jgi.doe.gov/Phyca11/download/Phyca11_filtered_genes.gff.gz
-phci
-	phci.fna	 http://genome.jgi.doe.gov/Phyci1/download/Phyci1_AssemblyScaffolds.fasta.gz
-	phci.gff	 http://genome.jgi.doe.gov/Phyci1/download/Phyci1_GeneCatalog_genes_20120612.gff.gz
-phin
-	phin.fna.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/fasta/phytophthora_infestans/dna/Phytophthora_infestans.ASM14294v1.31.dna_sm.genome.fa.gz
-	phin.gff.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/gff3/phytophthora_infestans/Phytophthora_infestans.ASM14294v1.31.gff3.gz
-phpa
-	phpa.fna	 https://olive.broadinstitute.org/collections/phytophthora_parasitica_inra_310.2/downloads/scaffolds.fasta
-	phpa.gtf	 https://olive.broadinstitute.org/collections/phytophthora_parasitica_inra_310.2/downloads/genes.gtf	
-phra
-	phra.fna.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/fasta/phytophthora_ramorum/dna/Phytophthora_ramorum.ASM14973v1.31.dna_sm.genome.fa.gz
-	phra.gff.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/gff3/phytophthora_ramorum/Phytophthora_ramorum.ASM14973v1.31.gff3.gz
-phso
-	phso.fna.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/fasta/phytophthora_sojae/dna/Phytophthora_sojae.ASM14975v1.31.dna_sm.genome.fa.gz
-	phso.gff.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/gff3/phytophthora_sojae/Phytophthora_sojae.ASM14975v1.31.gff3.gz
-pyul
-	pyul.fna.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/fasta/pythium_ultimum/dna/Pythium_ultimum.pug.31.dna_sm.genome.fa.gz
-	pyul.gff.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/gff3/pythium_ultimum/Pythium_ultimum.pug.31.gff3.gz
+### albu
+* albu.fna.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/fasta/albugo_laibachii/dna/Albugo_laibachii.ENA1.31.dna_sm.genome.fa.gz
+* albu.gff.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/gff3/albugo_laibachii/Albugo_laibachii.ENA1.31.gff3.gz
+
+### hyal
+* hyal.fna.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/fasta/hyaloperonospora_arabidopsidis/dna/Hyaloperonospora_arabidopsidis.HyaAraEmoy2_2.0.31.dna_sm.genome.fa.gz
+* hyal.gff.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/gff3/hyaloperonospora_arabidopsidis/Hyaloperonospora_arabidopsidis.HyaAraEmoy2_2.0.31.gff3.gz
+
+### phca
+* phca.fna	 http://genome.jgi.doe.gov/Phyca11/download/Phyca11_masked_genomic_scaffolds.fasta.gz
+* phca.gff	 http://genome.jgi.doe.gov/Phyca11/download/Phyca11_filtered_genes.gff.gz
+
+### phci
+* phci.fna	 http://genome.jgi.doe.gov/Phyci1/download/Phyci1_AssemblyScaffolds.fasta.gz
+* phci.gff	 http://genome.jgi.doe.gov/Phyci1/download/Phyci1_GeneCatalog_genes_20120612.gff.gz
+
+### phin
+* phin.fna.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/fasta/phytophthora_infestans/dna/Phytophthora_infestans.ASM14294v1.31.dna_sm.genome.fa.gz
+* phin.gff.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/gff3/phytophthora_infestans/Phytophthora_infestans.ASM14294v1.31.gff3.gz
+
+### phpa
+* phpa.fna	 https://olive.broadinstitute.org/collections/phytophthora_parasitica_inra_310.2/downloads/scaffolds.fasta
+* phpa.gtf	 https://olive.broadinstitute.org/collections/phytophthora_parasitica_inra_310.2/downloads/genes.gtf	
+
+### phra
+* phra.fna.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/fasta/phytophthora_ramorum/dna/Phytophthora_ramorum.ASM14973v1.31.dna_sm.genome.fa.gz
+* phra.gff.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/gff3/phytophthora_ramorum/Phytophthora_ramorum.ASM14973v1.31.gff3.gz
+
+### phso
+* phso.fna.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/fasta/phytophthora_sojae/dna/Phytophthora_sojae.ASM14975v1.31.dna_sm.genome.fa.gz
+* phso.gff.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/gff3/phytophthora_sojae/Phytophthora_sojae.ASM14975v1.31.gff3.gz
+
+### pyul
+* pyul.fna.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/fasta/pythium_ultimum/dna/Pythium_ultimum.pug.31.dna_sm.genome.fa.gz
+* pyul.gff.gz	 ftp://ftp.ensemblgenomes.org/pub/protists/release-31/gff3/pythium_ultimum/Pythium_ultimum.pug.31.gff3.gz
 	
 ## 0.2 Orthologs
 
@@ -138,4 +146,4 @@ Your directory should look like this at the end:
 
 Send me an e-mail: csurosm@gmail.com
 
-Miklós Cs&#369;rös
+Mikl‚Äîs Cs&#369;r≈°s
