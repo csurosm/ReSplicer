@@ -5,7 +5,10 @@ The test data cover nine oomycete genomes. The analysis results are described in
 
 >Bocco and Cs&#369;rös "Splice sites seldom slide: intron evolution in oomycetes", Genome Biology and Evolution, 2016.
 
+
 # 0. Collect the data
+
+The `oo_orthologs.tar.gz` tarball contains 1917 Fasta files with alignments of orthologous proteins. The `oomycetes.tre` file gives the phylogeny in Newick format. In addition, you need genome sequences and exon-intron structure annotations. 
 
 ## 0.1 Downloads
 
@@ -16,7 +19,7 @@ Rename the files as shown (four-letter organism code + extension). You can leave
 (here, JGI and Broad files are uncompressed, those from Ensembl Protists stay gzipped). 
 
 Note: P. parasitica genome has a newer assembly. We used the originally published files 
-(phytophthora_parasitica_inra-310_2_supercontigs.fasta, phytophthora_parasitica_inra-310_2_transcripts.gtf),
+(`phytophthora_parasitica_inra-310_2_supercontigs.fasta, phytophthora_parasitica_inra-310_2_transcripts.gtf`),
 but Broad redesigned their data download pages since. 
 
 ### albu
@@ -57,7 +60,7 @@ but Broad redesigned their data download pages since.
 	
 ## 0.2 Orthologs
 
-The ortholog sets are compiled in the tarball oo_orthologs.tar.gz. Download and unpack (tar zxf oo_orthologs.tar.gz): it puts the data files in a directory called oo_orthologs.
+The ortholog sets are compiled in the tarball `oo_orthologs.tar.gz`. Download and unpack (`tar zxf oo_orthologs.tar.gz`): it puts the data files in a directory called `oo_orthologs`.
 
 Now your directory should look like this: 
 
@@ -89,7 +92,7 @@ Now your directory should look like this:
 
 # 1. Combine the gene structure annotations
 
-Add all the (GFF, GTF) annotations into a single file that the programs can use. The example shows that you can process multiple annotation
+Add all the (GFF, GTF) annotations into a single file (`annotations.txt`) that the programs can use. The example shows that you can process multiple annotation
 files if they have the same format. 
 
 	java -cp ../ReSplicer.jar splice.extractAnnotations -prefix '|' -o annotations.txt gff3 albu=albu.fna.gz,hyal=hyal.fna.gz,phin=phin.fna.gz,phra=phra.fna.gz,phso=phso.fna.gz,pyul=pyul.fna.gz albu=albu.gff.gz,hyal=hyal.gff.gz,phin=phin.gff.gz,phra=phra.gff.gz,phso=phso.gff.gz,pyul=pyul.gff.gz
