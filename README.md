@@ -2,7 +2,8 @@
 
 # ReSplicer
 
-Java package for tracking gene structure evolution with splice site sliding and for reannotation. The program evaluates splice site homology using genomic sequences and aligned orthologous protein-coding genes.  
+Java package for tracking gene structure evolution with splice site sliding and for reannotation. The program evaluates splice site homology using genomic sequences and aligned orthologous protein-coding genes.The software is free under the terms of the MIT 
+License (see `LICENSE.md`).
 
 In order to use it, you need: 
 
