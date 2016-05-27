@@ -57,7 +57,7 @@ but Broad redesigned their data download pages since.
 	
 ## 0.2 Orthologs
 
-The ortholog sets are compiled in the tarball oo_orthologs.tar.gz. Download and unpack (tar zxf oo_orthologs.tar.gz): it puts the dasta files in a directory called oo_orthologs.
+The ortholog sets are compiled in the tarball oo_orthologs.tar.gz. Download and unpack (tar zxf oo_orthologs.tar.gz): it puts the data files in a directory called oo_orthologs.
 
 Now your directory should look like this: 
 
@@ -146,4 +146,4 @@ Your directory should look like this at the end:
 
 Send me an e-mail: csurosm@gmail.com
 
-Mikl—s Cs&#369;ršs
+Miklós Cs&#369;rös
