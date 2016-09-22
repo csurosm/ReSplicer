@@ -53,3 +53,6 @@ Example: `java -Xmx2048M-cp ReSplicer.jar splice.collectStatistics -o model.data
 
 Example: `java -Xmx2048M -cp ReSplicer.jar splice.checkSites -loss 5 -gain 12 -annot 1 -shift 5 -save savedir  phra=genome-phra.fa.gz,phso=genome-phso.fa.gz,pyul=genome-pyul.fa.gz,albu=genome-albu.fa,hyal=genome-hyal.fa,phca=genome-phca.fa,phin=genome-phin.fa.gz,phpa=genome-phpa.fa.gz,phci=genome-phci.fa.gz annotations.txt model.data oomycetes.tre orthologs/ali*.faa`
 
+Acknowledgment
+==============
+The development of the spftware package was partially funded by a Marie Curie International Incoming Fellowship within the 7th European Community Framework (PIIF-GA-2013-626035).
